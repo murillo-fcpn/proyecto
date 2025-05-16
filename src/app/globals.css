@@ -18,7 +18,10 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/ab553cdc-e15d-4597-b65f-bec9201fd2dd/10978e34-494d-431a-8f84-14df1ac2ee6a?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=2000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
