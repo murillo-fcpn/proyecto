@@ -1,10 +1,11 @@
 "use client";
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import styles from './Navbar.module.css'; // Importa tus estilos CSS Modules
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import styles from './Navbar.module.css';
 
 function Navbar() {
-  const location = useLocation(); // Hook para obtener la ubicación actual
+  const pathname = usePathname();
 
   return (
     <nav className={styles.navbar}>
@@ -12,24 +13,24 @@ function Navbar() {
         <ul className={styles.navbarNav}>
           <li className={styles.navItem}>
             <Link
-              to="/"
-              className={`${styles.navLink} ${location.pathname === '/' ? styles.active : ''}`}
+              href="/"
+              className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}
             >
               Inicio
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link
-              to="/acerca"
-              className={`${styles.navLink} ${location.pathname === '/acerca' ? styles.active : ''}`}
+              href="/acerca"
+              className={`${styles.navLink} ${pathname === '/acerca' ? styles.active : ''}`}
             >
               Acerca de
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link
-              to="/contacto"
-              className={`${styles.navLink} ${location.pathname === '/contacto' ? styles.active : ''}`}
+              href="/contacto"
+              className={`${styles.navLink} ${pathname === '/contacto' ? styles.active : ''}`}
             >
               Contacto
             </Link>
