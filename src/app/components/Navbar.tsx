@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from './Navbar.module.css';
+import styles from './navbar.module.css';
 
 function Navbar() {
   const pathname = usePathname();
@@ -20,7 +20,7 @@ function Navbar() {
                 Inicio
               </Link>
             </li>
-            <li className={styles.navItem}>
+            {/* <li className={styles.navItem}>
               <Link
                 href="/acerca"
                 className={`${styles.navLink} ${pathname === '/acerca' ? styles.active : ''}`}
@@ -35,7 +35,7 @@ function Navbar() {
               >
                 Contacto
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

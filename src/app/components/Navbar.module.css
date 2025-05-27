@@ -1,24 +1,17 @@
-/* src/components/Navbar.module.css */
-
 .navbar {
   width: 100%;
   background-color: rgba(75, 63, 97, 0.7);
-  /* Fondo transparente (ajusta el último valor para la opacidad) */
   backdrop-filter: blur(5px);
-  /* Efecto de desenfoque para que sea más elegante */
   -webkit-backdrop-filter: blur(5px);
-  /* Para compatibilidad con Safari */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  /* Sombra elegante */
-  /* z-index: 1000; Asegura que esté por encima de otros elementos */
   padding: 15px 0;
-  /* Padding vertical */
+  border-radius: 10px;
 }
 
 .navbarContainer {
   max-width: 960px;
   /* Ancho máximo del contenido del navbar */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* Centra el contenido */
   display: flex;
   justify-content: center;

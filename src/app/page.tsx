@@ -1,8 +1,8 @@
 "use client";
+import Navbar from "./components/navbar";
 import styles from "./page.module.css";
-import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import InicioPage from "./pages/inicio/page";
+import InicioPage from "./pages/inicio";
 
 export default function Home() {
   return (
