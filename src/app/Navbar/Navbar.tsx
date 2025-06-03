@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from './Navbar.module.css';
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   const pathname = usePathname();
@@ -21,10 +21,10 @@ function Navbar() {
           </li>
           <li className={styles.navItem}>
             <Link
-              href="/acerca"
-              className={`${styles.navLink} ${pathname === '/acerca' ? styles.active : ''}`}
+              href="/personajes"
+              className={`${styles.navLink} ${pathname === '/personajes' ? styles.active : ''}`}
             >
-              Acerca de
+              Personajes
             </Link>
           </li>
           <li className={styles.navItem}>
