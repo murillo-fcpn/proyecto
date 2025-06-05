@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/assets/globals.css";
 import styles from "./page.module.css";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +32,7 @@ export default function RootLayout({
           <main className={styles.main}>
             {children}
           </main>
+          <footer> La Paz, Bolivia </footer>
         </div>
       </body>
     </html>
