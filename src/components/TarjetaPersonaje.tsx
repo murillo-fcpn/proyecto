@@ -1,4 +1,3 @@
-// Componente de tarjeta para mostrar un personaje
 import React from "react";
 
 interface TarjetaPersonajeProps {
