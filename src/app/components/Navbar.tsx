@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./Navbar.module.css";
+import styles from "./Navbar.module.css"; // Adjust the path as necessary
 
 function Navbar() {
   const pathname = usePathname();
