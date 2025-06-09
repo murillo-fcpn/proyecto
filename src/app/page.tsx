@@ -1,4 +1,4 @@
-import styles from "@/assets/page.module.css";
+import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
             "https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png"
           }
           alt="rick y morty"
-          width={200} 
+          width={300} 
           height={200}
         />
         <p>Trabajo Programacion WEB II </p>

@@ -29,10 +29,10 @@ function Navbar() {
           </li>
           <li className={styles.navItem}>
             <Link
-              href="/contacto"
-              className={`${styles.navLink} ${pathname === '/contacto' ? styles.active : ''}`}
+              href="/capitulos"
+              className={`${styles.navLink} ${pathname === '/capitulos' ? styles.active : ''}`}
             >
-              Contacto
+              Capitulos
             </Link>
           </li>
         </ul>
