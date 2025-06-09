@@ -3,6 +3,18 @@ import { useEffect, useState } from "react";
 import TarjetaPersonaje from "@/components/TarjetaPersonaje";
 import Image from "next/image";
 
+interface Personaje {
+  id: number;
+  name: string;
+  image: string;
+  species: string;
+  status: string;
+  gender: string;
+  origin: {
+    name: string;
+  };
+}
+
 export default function Personajes() {
   const url: string = "https://rickandmortyapi.com/api/character";
 
@@ -20,7 +32,7 @@ export default function Personajes() {
       });
   }, []);
 
-  const handleCardClick = (personaje: any) => {
+  const handleCardClick = (personaje: Personaje) => {
     setPersonajeSeleccionado(personaje);
     setModalOpen(true);
   };
