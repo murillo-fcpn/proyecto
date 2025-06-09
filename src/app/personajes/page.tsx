@@ -18,10 +18,10 @@ interface Personaje {
 export default function Personajes() {
   const url: string = "https://rickandmortyapi.com/api/character";
 
-  const [personajes, setPersonajes] = useState<any[]>([]);
+  const [personajes, setPersonajes] = useState<Personaje[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
-  const [personajeSeleccionado, setPersonajeSeleccionado] = useState<any>(null);
+  const [personajeSeleccionado, setPersonajeSeleccionado] = useState<Personaje>(null);
 
   useEffect(() => {
     fetch(url)
