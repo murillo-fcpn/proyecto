@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.background}>
-        
         <Image
           src={
             "https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png"
