@@ -21,7 +21,7 @@ export default function Personajes() {
   const [personajes, setPersonajes] = useState<Personaje[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
-  const [personajeSeleccionado, setPersonajeSeleccionado] = useState<Personaje>(null);
+  const [personajeSeleccionado, setPersonajeSeleccionado] = useState<Personaje | null>(null);
 
   useEffect(() => {
     fetch(url)
