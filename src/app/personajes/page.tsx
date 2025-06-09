@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import TarjetaPersonaje from "@/components/TarjetaPersonaje";
+import Image from "next/image";
 
 export default function Personajes() {
   const url: string = "https://rickandmortyapi.com/api/character";
@@ -35,7 +36,7 @@ export default function Personajes() {
   return (
     <div>
       <h1>Personajes</h1>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 16, }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
         {personajes.map((p) => (
           <TarjetaPersonaje
             key={p.id}
@@ -89,7 +90,13 @@ export default function Personajes() {
               ×
             </button>
             <h2>{personajeSeleccionado.name}</h2>
-            <img src={personajeSeleccionado.image} alt={personajeSeleccionado.name} style={{ width: 150 }} />
+            {/* <img src={personajeSeleccionado.image} alt={personajeSeleccionado.name} style={{ width: 150 }} /> */}
+            <Image
+              src={personajeSeleccionado.image}
+              alt={personajeSeleccionado.name}
+              width={200}
+              height={200}
+            />
             <p>Especie: {personajeSeleccionado.species}</p>
             <p>Estado: {personajeSeleccionado.status}</p>
             <p>Género: {personajeSeleccionado.gender}</p>
